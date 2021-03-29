@@ -1,18 +1,10 @@
-/*
-  The IceDragon class must be derived from the Dragon class
- */
+public class IceDragon extends Dragon{ //derived from the dragon class
 
-public class IceDragon extends Dragon
-{
-    //Constructor; creates a new IceDragon object with the given name and image
-    public IceDragon(String name, String image)
-    {
+    public IceDragon(String name, String image){ //constructor creating a new ice dragon object with the inputted name and image
         super(name, image);
     }
 
-    //For the IceDragon type, this method should always return false.
-    public boolean canBreatheFire()
-    {
+    public boolean canBreatheFire(){ //should always return false (ice dragons cannot breathe fire)
         return false;
     }
 }

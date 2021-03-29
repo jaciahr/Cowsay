@@ -1,15 +1,11 @@
-public class Dragon extends Cow
-{
-    //Constructor; creates a new Dragon object with the given name and image
-    public Dragon(String name, String image)
-    {
+public class Dragon extends Cow{ //derived from the cow class
+
+    public Dragon(String name, String image){ //constructor creating a new dragon object with the given name and image
         super(name);
         super.setImage(image);
     }
 
-    //This method should exist in every Dragon class. For the default Dragon type, it should always return true.
-    public boolean canBreatheFire()
-    {
+    public boolean canBreatheFire(){ //should always return true because normal dragons can breathe fire
         return true;
     }
 }
